@@ -11,9 +11,18 @@ namespace Kata2a_Inheritance
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public MemberLevel Level {get; set;}
-        public DateTime Since { get; set; }
-
+        public MemberLevel Level {get; set;
+        public DateTime Since { get; set; };
+        public string[] Benefits { get; set; }
         public void RandomInit();
+    }
+
+    interface IRadissonMember : IMember
+    {
+
+    }
+     interface IHiltonMember : IMember
+    {
+
     }
 }
